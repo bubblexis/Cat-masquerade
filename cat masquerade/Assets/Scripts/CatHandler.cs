@@ -32,6 +32,9 @@ public class CatHandler : MonoBehaviour
      print("Correct! level up");
      GlobalValues.level += 1;  
      print("Current level: " + GlobalValues.level);
+
+    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    SceneManager.LoadScene(currentSceneIndex + 1);
     }
    }
 
