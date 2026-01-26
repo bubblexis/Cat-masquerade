@@ -30,11 +30,19 @@ public class CatHandler : MonoBehaviour
     else
     {
      print("Correct! level up");
-     GlobalValues.level += 1;  
-     print("Current level: " + GlobalValues.level);
+
+         if (SceneManager.GetActiveScene().buildIndex + 1 > 5)
+        {
+            print("Scene is already 5, you win");
+            SceneManager.LoadScene(MainMenu)
+            return;
+        }
+
+     print("Current level: " +  SceneManager.GetActiveScene().buildIndex + 1);
 
     int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     SceneManager.LoadScene(currentSceneIndex + 1);
+
     }
    }
 
@@ -43,7 +51,6 @@ public class CatHandler : MonoBehaviour
 
     void Start()
     {
-        // Save default cursor (optional, you can also just set it to null)
         defaultCursor = null;
     }
 
