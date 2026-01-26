@@ -437,7 +437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0ec932d5f81114fae5e02bf4730b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatHandler
-  Mask: {fileID: 1943577042}
+  mask: {fileID: 592173428}
+  hoverCursor: {fileID: 2800000, guid: c248b13cf3832e848874697ccff0e2f3, type: 3}
+  hotspot: {x: 0, y: 0}
 --- !u!1 &1125367820
 GameObject:
   m_ObjectHideFlags: 0

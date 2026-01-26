@@ -1,38 +1,43 @@
 using UnityEngine;
+using UnityEngine.InputSystem; // for new Input System
 
 public class CatHandler : MonoBehaviour
 {
-    public GameObject mask;
-     private Renderer rend;
-    private Color originalColor;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject mask;             // the object to hover over
+    public Texture2D hoverCursor;       // the cursor texture when hovering
+    public Vector2 hotspot = Vector2.zero; // cursor hotspot
+    private Texture2D defaultCursor;
+
     void Start()
     {
-         rend = GetComponent<Renderer>();
-        originalColor = rend.material.color;
+        // Save default cursor (optional, you can also just set it to null)
+        defaultCursor = null;
     }
 
-    // Update is called once per frame
     void Update()
     {
-         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Mouse.current == null) return; // safety for no mouse
+
+        Vector2 mousePos = Mouse.current.position.ReadValue();
+        Ray ray = Camera.main.ScreenPointToRay(mousePos);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit))
         {
             if (hit.transform == mask.transform)
             {
-                // Mouse is hovering over this object
-                rend.material.color = Color.yellow;
+                // Hovering → change cursor
+                Cursor.SetCursor(hoverCursor, hotspot, CursorMode.Auto);
             }
             else
             {
-                rend.material.color = originalColor;
+                // Not hovering → default cursor
+                Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
             }
         }
         else
         {
-            rend.material.color = originalColor;
+            Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
         }
     }
 }
