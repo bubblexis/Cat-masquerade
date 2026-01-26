@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+
     [Header("Input")]
     public InputActionAsset actions;
     private InputAction moveAction;
