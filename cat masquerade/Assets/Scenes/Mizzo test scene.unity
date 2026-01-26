@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0ec932d5f81114fae5e02bf4730b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatHandler
-  Mask: {fileID: 0}
+  Mask: {fileID: 1943577042}
 --- !u!1 &1125367820
 GameObject:
   m_ObjectHideFlags: 0
