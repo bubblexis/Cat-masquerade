@@ -34,7 +34,7 @@ public class CatHandler : MonoBehaviour
          if (SceneManager.GetActiveScene().buildIndex + 1 > 5)
         {
             print("Scene is already 5, you win");
-            SceneManager.LoadScene(MainMenu)
+            SceneManager.LoadScene(sceneBuildIndex: 0); // MainMenu (Should be index 0)
             return;
         }
 
