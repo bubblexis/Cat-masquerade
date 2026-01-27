@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController controller;
 
+    public Vector3 move;
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -46,11 +48,11 @@ public class PlayerController : MonoBehaviour
 
     void movementFunction()
     {
-     if (moveAction == null) return;
+        if (moveAction == null) return;
 
-      Vector2 input = moveAction.ReadValue<Vector2>();
-     Vector3 move = transform.forward * input.y; // forward/backward
-     controller.Move(move * speed * Time.deltaTime);
+        Vector2 input = moveAction.ReadValue<Vector2>();
+        move = transform.forward * input.y; // forward/backward
+        controller.Move(move * speed * Time.deltaTime);
     }
 
     void rotationFunction()
