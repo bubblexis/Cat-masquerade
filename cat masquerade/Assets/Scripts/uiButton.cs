@@ -1,13 +1,28 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class uiButton : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    bool canClick = false;
+
+    void Start()
+    {
+        StartCoroutine(EnableClickAfterDelay());
+    }
+
+    IEnumerator EnableClickAfterDelay()
+    {
+        yield return new WaitForSeconds(0.2f); // 200ms delay
+        canClick = true;
+    }
+
     public void press()
     {
+        if (!canClick) return;
+
+        GlobalValues.lives = 3;
         print("Button pressed");
-     SceneManager.LoadScene(sceneBuildIndex: 1);
-     GlobalValues.lives = 3;  
+        SceneManager.LoadScene(1);
     }
 }

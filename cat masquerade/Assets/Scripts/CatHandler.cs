@@ -10,7 +10,7 @@ public class CatHandler : MonoBehaviour
     public Texture2D hoverCursor;       // the cursor texture when hovering
     public Vector2 hotspot = Vector2.zero; // cursor hotspot
     private Texture2D defaultCursor;
-
+    bool hasClicked = false;
 
 
   void OnMaskClicked()
@@ -24,14 +24,16 @@ public class CatHandler : MonoBehaviour
      {
         print("You lose");
         SceneManager.LoadScene(sceneBuildIndex: 0);
-        return;
+         return;
      }
+     else
+     {
      print("Current lives: " + GlobalValues.lives);
 
      SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
      print("Scene reloaded");
     
+     }
     
     }
     else
@@ -61,34 +63,37 @@ public class CatHandler : MonoBehaviour
         defaultCursor = null;
     }
 
-    void Update()
+void Update()
+{
+    if (hasClicked) return;
+    if (Mouse.current == null) return;
+
+    Vector2 mousePos = Mouse.current.position.ReadValue();
+    Ray ray = Camera.main.ScreenPointToRay(mousePos);
+    RaycastHit hit;
+
+    if (Physics.Raycast(ray, out hit))
     {
-        if (Mouse.current == null) return; // safety for no mouse
-
-        Vector2 mousePos = Mouse.current.position.ReadValue();
-        Ray ray = Camera.main.ScreenPointToRay(mousePos);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit))
+        if (hit.transform == mask.transform)
         {
-            if (hit.transform == mask.transform)
+            Cursor.SetCursor(hoverCursor, hotspot, CursorMode.Auto);
+
+            if (Mouse.current.leftButton.wasPressedThisFrame)
             {
-                Cursor.SetCursor(hoverCursor, hotspot, CursorMode.Auto);
-                    if (Mouse.current.leftButton.wasPressedThisFrame)
-                    {
-                        Debug.Log("clicked, take off mask");
-                        OnMaskClicked();
-                    }
-            }
-            else
-            {
-                // Not hovering → default cursor
-                Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
+                hasClicked = true; 
+                Debug.Log("clicked, take off mask");
+                OnMaskClicked();
             }
         }
         else
         {
-            Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         }
     }
+    else
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    }
+}
+
 }
