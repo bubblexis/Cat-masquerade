@@ -18,7 +18,14 @@ public class CatHandler : MonoBehaviour
     if (Target == false)
     {
      print("Wrong!");
+
      GlobalValues.lives -= 1;  
+     if (GlobalValues.lives <= 0)
+     {
+        print("You lose");
+        SceneManager.LoadScene(sceneBuildIndex: 0);
+        return;
+     }
      print("Current lives: " + GlobalValues.lives);
 
      SceneManager.LoadScene(SceneManager.GetActiveScene().name);

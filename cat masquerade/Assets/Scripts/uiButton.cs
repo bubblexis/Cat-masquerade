@@ -8,5 +8,6 @@ public class uiButton : MonoBehaviour
     {
         print("Button pressed");
      SceneManager.LoadScene(sceneBuildIndex: 1);
+     GlobalValues.lives = 3;  
     }
 }
