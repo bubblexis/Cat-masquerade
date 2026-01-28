@@ -258,7 +258,6 @@ GameObject:
   - component: {fileID: 317619126}
   - component: {fileID: 317619125}
   - component: {fileID: 317619124}
-  - component: {fileID: 317619127}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -330,13 +329,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 9e25ae24fa489104a9ff97de6d21d1b7, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1780174047}
+        m_TargetAssemblyTypeName: uiButton, Assembly-CSharp
+        m_MethodName: press
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -380,18 +379,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317619122}
   m_CullTransparentMesh: 1
---- !u!114 &317619127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317619122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e25ae24fa489104a9ff97de6d21d1b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StartGameButton
 --- !u!1 &1016475697
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780174046}
+  - component: {fileID: 1780174047}
   m_Layer: 0
   m_Name: importantobject
   m_TagString: Untagged
@@ -879,6 +867,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1780174047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780174044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c29355ed87f00449d2cbe5638facc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::uiButton
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
