@@ -163,6 +163,7 @@ MonoBehaviour:
   actions: {fileID: -944628639613478452, guid: 229e54478f518f3418316a4895eb2e91, type: 3}
   speed: 5
   rotationSpeed: 100
+  move: {x: 0, y: 0, z: 0}
 --- !u!143 &2695994703621271670
 CharacterController:
   m_ObjectHideFlags: 0
@@ -200,6 +201,7 @@ GameObject:
   - component: {fileID: 773984239722634640}
   - component: {fileID: 1802339127739245928}
   - component: {fileID: 6233286396269298734}
+  - component: {fileID: 8714868494114024660}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -325,3 +327,18 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &8714868494114024660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8180067050197753871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1003075188890ed40a7d18560cbc9d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeadBobbing
+  walkingBobbingSpeed: 14
+  bobbingAmount: 0.05
+  playerController: {fileID: 2376384024947744446}
