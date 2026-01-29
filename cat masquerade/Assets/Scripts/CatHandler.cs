@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem; // for new Input System
 using UnityEngine.SceneManagement;
@@ -21,6 +23,11 @@ public class CatHandler : MonoBehaviour
 
     public int Randomizedmask;
 
+    public List<AudioClip> catClips = new();
+    public List<AudioClip> winLoseClips = new();
+    public AudioSource source;
+
+
     void RandomizeKitty()
     {
         /// in animationcontroller, make an int random 1-7
@@ -32,16 +39,35 @@ public class CatHandler : MonoBehaviour
 
     void OnMaskClicked()
     {
+        StartCoroutine(WinLoseCondition());
+
+        //ALL CODE MOVED TO IEnumerator WinLoseCondition//
+    }
+
+    IEnumerator WinLoseCondition()
+    {
+        //play sound when clicking on a cat, and before changing scenes
+        source.clip = catClips[Random.Range(0, catClips.Count)];
+        source.Play();
+
+        yield return new WaitForSeconds(1);
+
         if (Target == false)
         {
             print("Wrong!");
+
+            source.clip = winLoseClips[0];
+            source.Play();
+
+            yield return new WaitForSeconds(1);
+
+            source.Stop();
 
             GlobalValues.lives -= 1;
             if (GlobalValues.lives <= 0)
             {
                 print("You lose");
                 SceneManager.LoadScene(sceneBuildIndex: 0);
-                return;
             }
             else
             {
@@ -57,18 +83,25 @@ public class CatHandler : MonoBehaviour
         {
             print("Correct! level up");
 
+            source.clip = winLoseClips[1];
+            source.Play();
+
+            yield return new WaitForSeconds(1);
+
+            source.Stop();
+
             if (SceneManager.GetActiveScene().buildIndex + 1 > 5)
             {
                 print("Scene is already 5, you win");
                 SceneManager.LoadScene(sceneBuildIndex: 0); // MainMenu (Should be index 0)
-                return;
             }
+            else
+            {
+                print("Current level: " + (SceneManager.GetActiveScene().buildIndex + 1));
 
-            print("Current level: " + (SceneManager.GetActiveScene().buildIndex + 1));
-
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentSceneIndex + 1);
-
+                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentSceneIndex + 1);
+            }
         }
     }
 
