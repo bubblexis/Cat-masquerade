@@ -68,10 +68,24 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void gravityfunction()
+    {
+       move = Vector3.zero;
+
+        if (controller.isGrounded == false)
+        {
+            move += Physics.gravity;
+        }
+
+        controller.Move(move * Time.deltaTime);
+
+    }
+
     private void Update()
     {
       movementFunction();
       rotationFunction();
+      gravityfunction();
     }
 
 }
