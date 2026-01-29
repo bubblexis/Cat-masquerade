@@ -88,7 +88,7 @@ public class CatHandler : MonoBehaviour
             { //// evil preventer level 1 ...
 
 
-             Randomizedmask = Random.Range(1, 4);
+             Randomizedmask = Random.Range(1, 6);
              animator.SetInteger("RandomMask",  Randomizedmask);
 
                if (EarsAddon.activeSelf == false && Hornsaddon.activeSelf == false && WhiskersAddon.activeSelf == false && Randomizedmask == 1)
