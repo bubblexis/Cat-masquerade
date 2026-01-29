@@ -18,7 +18,7 @@ public class CatHandler : MonoBehaviour
     public GameObject WhiskersAddon;
 
 
-    void Randomize()
+    void RandomizeAddons()
     {
         EarsAddon.SetActive(Random.value > 0.5f);
         Hornsaddon.SetActive(Random.value > 0.5f);
@@ -73,7 +73,7 @@ public class CatHandler : MonoBehaviour
         defaultCursor = null;
         if (Target == false)
         {
-         Randomize();
+            RandomizeAddons();
         }
     }
 
