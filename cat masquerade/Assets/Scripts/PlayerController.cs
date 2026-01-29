@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
     void gravityfunction()
     {
-       move = Vector3.zero;
+       move.y = 0;
 
         if (controller.isGrounded == false)
         {
