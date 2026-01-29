@@ -160,7 +160,6 @@ Transform:
   - {fileID: 1871621722}
   - {fileID: 1457333487}
   - {fileID: 1361275620}
-  - {fileID: 1663616964}
   - {fileID: 1284764390}
   - {fileID: 1667993955}
   - {fileID: 2007842590}
@@ -193,6 +192,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (2)
@@ -317,6 +320,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (2)
@@ -456,6 +463,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty
@@ -632,6 +643,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (4)
@@ -865,6 +880,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (9)
@@ -981,87 +1000,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb987dd7818e704992721dcb4a54635, type: 3}
---- !u!1001 &933818507
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3891898263281585122, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: Target
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4474056823125969242, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_Name
-      value: Targetkitty
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.051443
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.79804
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 9.853225
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.21323216
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.9770016
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -155.376
-      objectReference: {fileID: 0}
-    - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5414744914536173849, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7769382219658235171, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 2a5948f5de60a3048b10ea350ab77cee, type: 2}
-    - target: {fileID: 8577985168286454275, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731303181119453135, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: fbab3a893bd2f5441ad9903d8ac8bebe, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
 --- !u!4 &958664523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
@@ -1142,6 +1080,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (6)
@@ -1313,6 +1255,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (5)
@@ -1370,6 +1316,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (3)
@@ -1427,6 +1377,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty
@@ -1484,6 +1438,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (10)
@@ -1611,23 +1569,27 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 169109373}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3891898263281585122, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: Target
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
-      value: MaskedKitty (3)
+      value: EvilKitty
       objectReference: {fileID: 0}
     - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.585587
+      value: -5.051443
       objectReference: {fileID: 0}
     - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.65904
       objectReference: {fileID: 0}
     - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.729065
+      value: 9.853225
       objectReference: {fileID: 0}
     - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1737,6 +1699,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (2)
@@ -1799,6 +1765,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (11)
@@ -1962,11 +1932,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
---- !u!4 &1663616964 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
-  m_PrefabInstance: {fileID: 1398874616}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1665678974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1975,6 +1940,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (1)
@@ -2037,6 +2006,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (8)
@@ -2171,6 +2144,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 169109373}
     m_Modifications:
+    - target: {fileID: 3831249249535444794, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 622b220494be1a245aa15cdbb1867642, type: 2}
     - target: {fileID: 4718294077777961278, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_Name
       value: MaskedKitty (7)
@@ -2300,4 +2277,4 @@ SceneRoots:
   - {fileID: 908871398}
   - {fileID: 1325897589}
   - {fileID: 169109373}
-  - {fileID: 933818507}
+  - {fileID: 1398874616}

@@ -78,6 +78,7 @@ public class CatHandler : MonoBehaviour
     void Start()
     {
         currentlevel = SceneManager.GetActiveScene().buildIndex + 1;
+         animator.SetInteger("Level", currentlevel);
         defaultCursor = null;
         RandomizeKitty();
         if (Target == false)
