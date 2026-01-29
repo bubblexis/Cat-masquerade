@@ -13,25 +13,22 @@ public class CatHandler : MonoBehaviour
     bool hasClicked = false;
     public int currentlevel;
 
-     public Animator animator;
+    public Animator animator;
 
     public GameObject EarsAddon;
     public GameObject Hornsaddon;
     public GameObject WhiskersAddon;
 
-   void RandomizeKitty()
+    public int Randomizedmask;
+
+    void RandomizeKitty()
     {
         /// in animationcontroller, make an int random 1-7
         /// 
         int randomValue = Random.Range(1, 8); // 1 to 7 inclusive
         animator.SetInteger("Color", randomValue);
     }
-    void RandomizeAddons()
-    {
-        EarsAddon.SetActive(Random.value > 0.5f);
-        Hornsaddon.SetActive(Random.value > 0.5f);
-        WhiskersAddon.SetActive(Random.value > 0.5f);
-    }
+
 
     void OnMaskClicked()
     {
@@ -78,12 +75,27 @@ public class CatHandler : MonoBehaviour
     void Start()
     {
         currentlevel = SceneManager.GetActiveScene().buildIndex + 1;
-         animator.SetInteger("Level", currentlevel);
+        animator.SetInteger("Level", currentlevel);
         defaultCursor = null;
         RandomizeKitty();
         if (Target == false)
         {
-            RandomizeAddons();
+            EarsAddon.SetActive(Random.value > 0.5f);
+            Hornsaddon.SetActive(Random.value > 0.5f);
+            WhiskersAddon.SetActive(Random.value > 0.5f);
+
+            if (currentlevel == 1)
+            { //// evil preventer level 1 ...
+
+
+             Randomizedmask = Random.Range(1, 4);
+             animator.SetInteger("RandomMask",  Randomizedmask);
+
+               if (EarsAddon.activeSelf == false && Hornsaddon.activeSelf == false && WhiskersAddon.activeSelf == false && Randomizedmask == 1)
+                {
+                    EarsAddon.SetActive(true);
+                }
+            }
         }
     }
 
