@@ -13,11 +13,19 @@ public class CatHandler : MonoBehaviour
     bool hasClicked = false;
     public int currentlevel;
 
+     public Animator animator;
+
     public GameObject EarsAddon;
     public GameObject Hornsaddon;
     public GameObject WhiskersAddon;
 
-
+   void RandomizeKitty()
+    {
+        /// in animationcontroller, make an int random 1-7
+        /// 
+        int randomValue = Random.Range(1, 8); // 1 to 7 inclusive
+        animator.SetInteger("Color", randomValue);
+    }
     void RandomizeAddons()
     {
         EarsAddon.SetActive(Random.value > 0.5f);
@@ -71,6 +79,7 @@ public class CatHandler : MonoBehaviour
     {
         currentlevel = SceneManager.GetActiveScene().buildIndex + 1;
         defaultCursor = null;
+        RandomizeKitty();
         if (Target == false)
         {
             RandomizeAddons();

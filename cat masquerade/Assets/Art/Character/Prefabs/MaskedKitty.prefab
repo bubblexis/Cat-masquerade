@@ -111,6 +111,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1276980524519008121}
   m_SourcePrefab: {fileID: 100100000, guid: 55617aed59d4d1b4eb06691d36eb4d15, type: 3}
+--- !u!95 &2076514635099759102 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 55617aed59d4d1b4eb06691d36eb4d15, type: 3}
+  m_PrefabInstance: {fileID: 5601306574175198319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2102659041590431252 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5806815459404092027, guid: 55617aed59d4d1b4eb06691d36eb4d15, type: 3}
@@ -164,6 +169,7 @@ MonoBehaviour:
   hoverCursor: {fileID: 2800000, guid: c248b13cf3832e848874697ccff0e2f3, type: 3}
   hotspot: {x: 0, y: 0}
   currentlevel: 0
+  animator: {fileID: 2076514635099759102}
   EarsAddon: {fileID: 8577985168286454275}
   Hornsaddon: {fileID: 4474056823125969242}
   WhiskersAddon: {fileID: 5414744914536173849}
