@@ -38,7 +38,7 @@ public class CatHandler : MonoBehaviour
 
     void PlayrandomLoopedpose()
     {
-         int randomValue = Random.Range(1, 5); // 1 to 4 inclusive
+        int randomValue = Random.Range(1, 5); // 1 to 4 inclusive
         animator.SetInteger("Pose", randomValue);
     }
 
@@ -127,12 +127,24 @@ public class CatHandler : MonoBehaviour
             { //// evil preventer level 1 ...
 
 
-             Randomizedmask = Random.Range(1, 6);
-             animator.SetInteger("RandomMask",  Randomizedmask);
+                Randomizedmask = Random.Range(1, 6);
+                animator.SetInteger("RandomMask", Randomizedmask);
 
-               if (EarsAddon.activeSelf == false && Hornsaddon.activeSelf == false && WhiskersAddon.activeSelf == false && Randomizedmask == 1)
+                if (EarsAddon.activeSelf == false && Hornsaddon.activeSelf == false && WhiskersAddon.activeSelf == false && Randomizedmask == 1)
                 {
                     EarsAddon.SetActive(true);
+                }
+            }
+            if (currentlevel == 2)
+            { //// evil preventer level 2 ...
+
+
+                Randomizedmask = Random.Range(1, 7);
+                animator.SetInteger("RandomMask", Randomizedmask);
+
+                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 1)
+                {
+                    EarsAddon.SetActive(false);
                 }
             }
         }
