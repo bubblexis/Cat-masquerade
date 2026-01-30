@@ -131,6 +131,8 @@ public class CatHandler : MonoBehaviour
                 Randomizedmask = Random.Range(1, 6);
                 animator.SetInteger("RandomMask", Randomizedmask);
 
+                print("Randomized mask value: " + Randomizedmask);
+
                 if (EarsAddon.activeSelf == false && Hornsaddon.activeSelf == false && WhiskersAddon.activeSelf == false && Randomizedmask == 1)
                 {
                     EarsAddon.SetActive(true);
