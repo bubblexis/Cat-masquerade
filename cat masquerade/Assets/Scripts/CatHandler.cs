@@ -157,7 +157,7 @@ public class CatHandler : MonoBehaviour
                 Randomizedmask = Random.Range(1, 7);
                 animator.SetInteger("RandomMask", Randomizedmask);
 
-                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 1)
+                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 3)
                 {
                     EarsAddon.SetActive(false);
                 }
@@ -169,7 +169,7 @@ public class CatHandler : MonoBehaviour
                 Randomizedmask = Random.Range(1, 7);
                 animator.SetInteger("RandomMask", Randomizedmask);
 
-                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 1)
+                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 4)
                 {
                     EarsAddon.SetActive(false);
                 }
@@ -181,7 +181,7 @@ public class CatHandler : MonoBehaviour
                 Randomizedmask = Random.Range(1, 7);
                 animator.SetInteger("RandomMask", Randomizedmask);
 
-                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 1)
+                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 4)
                 {
                     EarsAddon.SetActive(false);
                 }
