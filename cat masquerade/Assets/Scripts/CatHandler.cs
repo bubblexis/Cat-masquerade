@@ -36,12 +36,17 @@ public class CatHandler : MonoBehaviour
         animator.SetInteger("Color", randomValue);
     }
 
+    void PlayrandomLoopedpose()
+    {
+         int randomValue = Random.Range(1, 5); // 1 to 4 inclusive
+        animator.SetInteger("Pose", randomValue);
+    }
+
 
     void OnMaskClicked()
     {
         StartCoroutine(WinLoseCondition());
 
-        //ALL CODE MOVED TO IEnumerator WinLoseCondition//
     }
 
     IEnumerator WinLoseCondition()
@@ -111,6 +116,7 @@ public class CatHandler : MonoBehaviour
         animator.SetInteger("Level", currentlevel);
         defaultCursor = null;
         RandomizeKitty();
+        PlayrandomLoopedpose();
         if (Target == false)
         {
             EarsAddon.SetActive(Random.value > 0.5f);
