@@ -32634,6 +32634,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6413158870946838070}
     m_Modifications:
+    - target: {fileID: 77188516017959808, guid: 6fb922dfcf5a23f449cb2d7b007d4e46, type: 3}
+      propertyPath: m_Range
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5096406583706308270, guid: 6fb922dfcf5a23f449cb2d7b007d4e46, type: 3}
       propertyPath: m_Name
       value: Red_Chandelier (1)
@@ -37060,6 +37064,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6413158870946838070}
     m_Modifications:
+    - target: {fileID: 77188516017959808, guid: 6fb922dfcf5a23f449cb2d7b007d4e46, type: 3}
+      propertyPath: m_Range
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5096406583706308270, guid: 6fb922dfcf5a23f449cb2d7b007d4e46, type: 3}
       propertyPath: m_Name
       value: Red_Chandelier
