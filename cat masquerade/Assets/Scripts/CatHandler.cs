@@ -112,7 +112,7 @@ public class CatHandler : MonoBehaviour
 
     void Start()
     {
-        currentlevel = SceneManager.GetActiveScene().buildIndex + 1;
+        currentlevel = SceneManager.GetActiveScene().buildIndex;
         print("Current level at start: " + currentlevel);
         animator.SetInteger("Level", currentlevel);
         defaultCursor = null;
