@@ -138,8 +138,44 @@ public class CatHandler : MonoBehaviour
                     EarsAddon.SetActive(true);
                 }
             }
-            if (currentlevel == 2)
+            else if (currentlevel == 2)
             { //// evil preventer level 2 ...
+
+
+                Randomizedmask = Random.Range(1, 7);
+                animator.SetInteger("RandomMask", Randomizedmask);
+
+                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 1)
+                {
+                    EarsAddon.SetActive(false);
+                }
+            }
+            else if (currentlevel == 3)
+            { //// evil preventer level 3 ...
+
+
+                Randomizedmask = Random.Range(1, 7);
+                animator.SetInteger("RandomMask", Randomizedmask);
+
+                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 1)
+                {
+                    EarsAddon.SetActive(false);
+                }
+            }
+            else if (currentlevel == 4)
+            { //// evil preventer level 3 ...
+
+
+                Randomizedmask = Random.Range(1, 7);
+                animator.SetInteger("RandomMask", Randomizedmask);
+
+                if (EarsAddon.activeSelf == true && Hornsaddon.activeSelf == true && WhiskersAddon.activeSelf == true && Randomizedmask == 1)
+                {
+                    EarsAddon.SetActive(false);
+                }
+            }
+            else if (currentlevel == 5)
+            { //// evil preventer level 3 ...
 
 
                 Randomizedmask = Random.Range(1, 7);
