@@ -2540,6 +2540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Evil_MaskedKitty
       objectReference: {fileID: 0}
+    - target: {fileID: 5168311700205598227, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2721983f2b07cb04ab3398fa02f7e989, type: 2}
     - target: {fileID: 5346177221360401284, guid: 67ec5c4b13d70b7408e44b9b4df69d16, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5143948
